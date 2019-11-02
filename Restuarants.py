@@ -5,7 +5,7 @@ class Restuarant:
         self.menu = {}
 
     def add_to_menu(self, item, price):
-        menu[item] = price
+        self.menu[item] = price
 
 class Restuarants:
 

@@ -111,3 +111,18 @@ rest4.add_to_menu("Ultimate Ham N' Cheese",5.75)
 rest4.add_to_menu("Turkey Havarti",6.00)
 
 glblRests.add_to(rest4)
+
+rest5 = Restuarant("Pizza Pizza")
+rest5.add_to_menu("Cheese Slice",5.49)
+rest5.add_to_menu("Pepporni Slice",6.49)
+rest5.add_to_menu("Veggie Slice",6.49)
+
+glblRests.add_to(rest5)
+
+rest6 = Restuarant("Other")
+rest6.add_to_menu("Bag of Chips",1.99)
+rest6.add_to_menu("Piece of Fruit",2.99)
+rest6.add_to_menu("Pastry",3.99)
+rest6.add_to_menu("Drink",3.99)
+
+glblRests.add_to(rest6)

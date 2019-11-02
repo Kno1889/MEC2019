@@ -1,8 +1,9 @@
 from Restuarants import *
+from Students import *
 
 def creationX():
     print(glblRests.lst[0].menu)
-    
+
 def restMenu():
     restSelection = input("Pick the Restaurant you would like to order from\n 1. CreationX\n 2. Eggcetra\n 3. Global Delights\n 4. HammerTown\n 5. PizzaPizza\n 6. Other\n Press exit to exit: ")
     if(restSelection == 'exit'):
@@ -31,6 +32,8 @@ def main():
         stdNum = input("Please enter your student number. If you do not have a student number press 0      ")
         if(stdNum == '0'):
             restMenu()
+        elif(stdNum == 'exit'):
+            break
         #else:
         
 main()

@@ -1,0 +1,61 @@
+class Student(object): 
+    def __init__(self, name, num):
+        self.name = name
+        self.num = num
+        self.fav = []
+        self.last = []
+    
+    def setFav(self, favs):
+        self.fav = favs
+        
+    def setLast(self, lasTime):
+        self.last = lasTime
+
+
+
+def AppendNew(): 
+    newName = input("Enter your name: ")
+    newNum = input("Enter your student number: ")
+    stuList.append(Student(newName, newNum))
+    print()
+    
+def options(num):
+    switcher = {
+        0: "You have selected the same order as last time"
+            ,
+        1: "You have selected your favourite order"
+            ,
+        2: "You have selected a new order"
+            ,
+    }
+    print(switcher.get(num, "Invalid Input"))
+
+
+
+
+
+stuList = [] #database of students at mcmaster
+
+def main():
+    lenlist = len(stuList)
+    while lenlist == 0:
+        AppendNew()
+        lenlist += 1
+        
+    exist = False
+    num = input("Welcome! Please enter your student number: ")
+    for i in range(len(stuList)):
+        if (num == stuList[i].num):
+            print("Hello, " + stuList[i].name)
+            exist = True
+            return i
+        
+        if(exist == False):
+            AppendNew()
+            
+    for j in len(stuList):
+        print(stuList[j].name, stuList[j].num)
+        
+    option = input("Press 0 to order the same as last time, 1 to order your favorite and 0 to order something new!")
+    options(option)
+main()

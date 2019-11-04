@@ -1,0 +1,13 @@
+To Do: 
+
+ - Create a file similar to Restaurants.py but with Student numbers, MacID's and fav and last
+
+ - UI/embed Python program in HTML -> Using buttons via HTML means we don't need to handle exceptions, but we need to be able to go back & 
+					order from diff. restaurants simultaneously
+
+ - Card-Reader API to allow payment with credit/debit cards AND try to incorporate meal plan
+
+ - Global variable to have order numbers
+
+ - figure out delivery mechanism
+	lower traffic inside La Piazza => Hospitality services employess are less occupied => could take food to the correct kiosk maybe??
